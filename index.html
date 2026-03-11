@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuesioner Penelitian - [Judul Kamu]</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            color: #fff;
+        }
+
+        .header {
+            text-align: center;
+            max-width: 800px;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+
+        /* Container Pembungkus Google Form */
+        .form-wrapper {
+            background: rgba(255, 255, 255, 0.95);
+            width: 100%;
+            max-width: 850px;
+            height: 900px; /* Atur tinggi sesuai panjang form */
+            border-radius: 24px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Loading Animation */
+        .loader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            color: #764ba2;
+            font-weight: 600;
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        @media (max-width: 600px) {
+            .header h1 { font-size: 1.8rem; }
+            .form-wrapper { height: 700px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Kuesioner Penelitian Eksklusif</h1>
+        <p>Terima kasih telah meluangkan waktu. Data yang Anda berikan sangat berarti bagi perkembangan ilmu pengetahuan di bidang [Sebutkan Bidang Kamu].</p>
+    </div>
+
+    <div class="form-wrapper">
+        <div class="loader">Memuat Formulir...</div>
+        
+        <!-- MASUKKAN LINK EMBED GOOGLE FORM DI BAWAH INI -->
+        <iframe src="https://docs.google.com/forms/d/1SxI3pgEoNurlI5EBNBVlw-B_QVMcnxvO3t2PnDUw87w/viewform?embedded=true">
+            Memuat…
+        </iframe>
+    </div>
+
+    <footer>
+        &copy; 2024 Tim Peneliti [Nama Universitas/Instansi] <br>
+        Semua data responden bersifat rahasia dan dilindungi.
+    </footer>
+
+</body>
+</html>
